@@ -1,0 +1,9 @@
+name: iOS CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Project setup note
+        run: echo "Add the Xcode project generated locally, then replace this step with xcodebuild test."
